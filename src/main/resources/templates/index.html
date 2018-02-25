@@ -14,7 +14,7 @@
 <body>
 <div class="container-fluid" style="margin-top: 20px">
     <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-7 col-md-offset-3">
             <div class="panel panel-primary">
 
                 <div class="panel-heading">
@@ -27,6 +27,8 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Description</th>
+                                <th>Prep Time</th>
+                                <th>Difficulty</th>
                             </tr>
                             </thead>
                            <!-- <tr th:remove="all">
@@ -38,8 +40,10 @@
                                 <td th:text="${recipe.description}">Tasty Goodnees 2</td>
                             </tr>-->
                             <tr th:each="recipe : ${recipes}">
-                                <td th:text="${recipe.id}">334</td>
-                                <td th:text="${recipe.description}">Tasty Goodnees 3</td>
+                                <td th:text="${recipe.id}"></td>
+                                <td th:text="${recipe.description}"></td>
+                                <td th:text="${recipe.prepTime}"></td>
+                                <td th:text="${recipe.difficulty}"></td>
                             </tr>
                         </table>
                     </div>
